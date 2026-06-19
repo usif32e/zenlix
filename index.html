@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenlix — Digital Agency</title>
+  <meta name="description" content="Zenlix is a creative digital agency building websites and digital solutions.">
+
+  <!-- Fonts: Poppins for display, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" data-i18n="logo">Zenlix</a>
+
+      <nav class="nav-links" id="navLinks">
+         <a href="#hero" data-i18n="nav_about">Home</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#why" data-i18n="nav_why">Why Us</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Translation button -->
+        <button class="lang-btn" id="langBtn" aria-label="Switch language" title="Switch language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langBtnText">AR</span>
+        </button>
+
+        <!-- Hamburger menu (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+<!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('https://i.pinimg.com/236x/6e/a9/8d/6ea98d7206446c2a60839b3e196fe034.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+ 
+    <div class="hero-content fade-in-up">
+      <span class="hero-logo">Zenlix</span>
+      <h1 class="hero-heading" data-i18n="hero_heading">We Build Digital <span class="highlight">Experiences</span></h1>
+      <p class="hero-desc" data-i18n="hero_desc">
+        Zenlix is a creative digital agency crafting beautiful websites, products, and brands that help businesses grow online.
+      </p>
+      <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Get Started</a>
+    </div>
+ 
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+  <!-- ===== SECTION 1: ABOUT US ===== -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-icon-wrap">
+          <i class="fa-solid fa-feather-pointer"><img src="images/icon.png" alt=""></i>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about_eyebrow">Who we are</span>
+        <h2 data-i18n="about_title">About Zenlix</h2>
+        <p data-i18n="about_text">
+          Zenlix is a creative digital agency that builds websites and digital solutions for ambitious brands.
+          We blend clean design with solid engineering to turn ideas into fast, elegant, and memorable digital experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: OUR SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services_eyebrow">What we do</span>
+        <h2 data-i18n="services_title">Our Services</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3 data-i18n="service1_title">Web Design</h3>
+          <p data-i18n="service1_desc">Clean, modern interfaces crafted to engage visitors and reflect your brand identity.</p>
+        </div>
+
+  
+        <div class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3 data-i18n="service2_title">Web Development</h3>
+          <p data-i18n="service2_desc">Fast, reliable, and scalable websites built with clean and modern code.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3 data-i18n="service3_title">Digital Branding</h3>
+          <p data-i18n="service3_desc">Consistent visual identity and messaging that helps your brand stand out.</p>
+        </div>
+
+
+
+        <div class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3 data-i18n="service4_title">Digital Marketing</h3>
+          <p data-i18n="service4_desc">Social media management and marketing campaigns designed to boost your online presence and attract more customers.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: WHY CHOOSE US ===== -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="why_eyebrow">Our advantage</span>
+        <h2 data-i18n="why_title">Why Choose Us</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box reveal">
+          <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 data-i18n="why1_title">Modern Design</h3>
+          <p data-i18n="why1_desc">Thoughtful, contemporary visuals that keep your brand feeling current.</p>
+        </div>
+
+        <div class="feature-box reveal">
+          <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 data-i18n="why2_title">Fast Delivery</h3>
+          <p data-i18n="why2_desc">Efficient workflows that get your project live without sacrificing quality.</p>
+        </div>
+
+        <div class="feature-box reveal">
+          <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3 data-i18n="why3_title">Responsive Websites</h3>
+          <p data-i18n="why3_desc">Pixel-perfect experiences on every screen, from phones to desktops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: CONTACT US ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow" data-i18n="contact_eyebrow">Let's talk</span>
+        <h2 data-i18n="contact_title">Contact Us</h2>
+        <p data-i18n="contact_text">Have a project in mind? Send us a message and our team will get back to you shortly.</p>
+        <ul class="contact-details">
+          <li><i class="fa-solid fa-envelope"></i>zenlixaagency@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +201038641662</li>
+          <li><i class="fa-solid fa-location-dot"></i> <span data-i18n="contact_location">Giza · Elsheikh Zayed</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name" data-i18n="form_name">Name</label>
+          <input type="text" id="name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Your full name">
+          <span class="error-msg" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-i18n="form_email">Email</label>
+          <input type="email" id="email" name="email" data-i18n-placeholder="form_email_ph" placeholder="you@example.com">
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="form_message">Message</label>
+          <textarea id="message" name="message" rows="5" data-i18n-placeholder="form_message_ph" placeholder="Tell us about your project..."></textarea>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="form_send">Send Message</button>
+        <p class="form-success" id="formSuccess" data-i18n="form_success">Thank you! Your message has been sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo footer-logo">Zenlix</span>
+      <p data-i18n="footer_text">&copy; 2026 Zenlix. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/thezenlix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="https://www.facebook.com/Zenlixagency" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://t.me/zenlixagency" aria-label="Twitter"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

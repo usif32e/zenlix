@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ar: {
       logo: 'زينليكس',
-      nav_about: 'الرئيسيه',
+      nav_home: 'الرئيسيه',
       nav_about: 'من نحن',
       nav_services: 'خدماتنا',
       nav_why: 'لماذا نحن',

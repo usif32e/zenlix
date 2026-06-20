@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       logo: 'Zenlix',
+      nav_home: 'Home',
       nav_about: 'About',
       nav_services: 'Services',
       nav_why: 'Why Us',
@@ -261,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ar: {
       logo: 'زينليكس',
+      nav_about: 'الرئيسيه',
       nav_about: 'من نحن',
       nav_services: 'خدماتنا',
       nav_why: 'لماذا نحن',
